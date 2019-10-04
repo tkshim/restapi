@@ -6,7 +6,9 @@ app.get('/', (req, res) => {
   console.log('Access');     // コンソール出力
   res.send('Hello World!');  // ブラウザでのアクセス時に画面に表示されるモノ
 });
-app.get('/g/', (req, res) => res.json({method: "こんにちは、getさん"}));
+app.get('/g/', (req, res) => {
+  res.json({method: "こんにちは、getさん"});
+});
 
 // サーバ起動
 const server = app.listen(process.env.PORT || 8080, () => {
