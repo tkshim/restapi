@@ -7,7 +7,22 @@ app.get('/', (req, res) => {
   res.send('Hello World!');  // ブラウザでのアクセス時に画面に表示されるモノ
 });
 app.get('/g/', (req, res) => {
-  res.json({method: "こんにちは、getさん"});
+  res.json({
+"name"   : "John Smith",
+  "sku"    : "20223",
+  "price"  : 23.95,
+  "shipTo" : { "name" : "Jane Smith",
+               "address" : "123 Maple Street",
+               "city" : "Pretendville",
+               "state" : "NY",
+               "zip"   : "12345" },
+  "billTo" : { "name" : "John Smith",
+               "address" : "123 Maple Street",
+               "city" : "Pretendville",
+               "state" : "NY",
+               "zip"   : "12345" }
+
+});
 });
 
 // サーバ起動
