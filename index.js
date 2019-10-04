@@ -25,7 +25,7 @@ app.get('/g1/', (req, res) => {
 });
 });
 
-app.get('/g/1', (req, res) => {
+app.get('/g/2', (req, res) => {
   res.json({
 "name"   : "John Smith",
   "sku"    : "20223",
