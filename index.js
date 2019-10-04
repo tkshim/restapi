@@ -4,9 +4,28 @@ const app = express();
 
 app.get('/', (req, res) => {
   console.log('Access');     // コンソール出力
-  res.send('Hello World!');  // ブラウザでのアクセス時に画面に表示されるモノ
+  res.send('Hello World!');  // ブラウザ
 });
-app.get('/g/', (req, res) => {
+app.get('/g1/', (req, res) => {
+  res.json({
+"name"   : "John Smith",
+  "sku"    : "20223",
+  "price"  : 23.95,
+  "shipTo" : { "name" : "Jane Smith",
+               "address" : "123 Maple Street",
+               "city" : "Pretendville",
+               "state" : "NY",
+               "zip"   : "12345" },
+  "billTo" : { "name" : "John Smith",
+               "address" : "123 Maple Street",
+               "city" : "Pretendville",
+               "state" : "NY",
+               "zip"   : "12345" }
+
+});
+});
+
+app.get('/g/1', (req, res) => {
   res.json({
 "name"   : "John Smith",
   "sku"    : "20223",
