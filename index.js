@@ -19,6 +19,12 @@ app.get('/stock/mule', (req, res) => {
     "price"  : 44.57
   });
 });
+app.get('/stock/ms', (req, res) => {
+  res.json({
+    "name"   : "MICROSOFT",
+    "price"  : 100
+  });
+});
 
 // サーバ起動
 const server = app.listen(process.env.PORT || 8080, () => {
