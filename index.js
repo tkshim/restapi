@@ -34,3 +34,5 @@ const server = app.listen(process.env.PORT || 8080, () => {
 });
 
 //参考　http://neos21.hatenablog.com/entry/2018/12/05/080000
+//参考  with Routing https://qiita.com/leafia78/items/73cc7160d002a4989416　
+//参考　with MongoDB https://qiita.com/itagakishintaro/items/a1519998a91061cbfb1e
