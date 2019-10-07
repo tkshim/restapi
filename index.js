@@ -7,19 +7,19 @@ app.get('/', (req, res) => {
   res.send('Hello World!');  // ブラウザ
 });
 
-app.get('/stock/crm', (req, res) => {
+app.get('/stock/v1/crm', (req, res) => {
   res.json({
     "name"   : "CRM",
     "price"  : 146.98
   });
 });
-app.get('/stock/mule', (req, res) => {
+app.get('/stock/v1/mule', (req, res) => {
   res.json({
     "name"   : "MULESOFT",
     "price"  : 44.57
   });
 });
-app.get('/stock/ms', (req, res) => {
+app.get('/stock/v1/ms', (req, res) => {
   res.json({
     "name"   : "MICROSOFT",
     "price"  : 100
