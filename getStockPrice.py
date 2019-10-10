@@ -5,7 +5,7 @@ import requests
 
 print '予想したい株価の会社は？'
 stockName = raw_input('>> ')
-url = 'https://restapi20191004.herokuapp.com/stock/' + stockName
+url = 'https://restapi20191004.herokuapp.com/stock/v1' + stockName
 r = requests.get(url)
 
 n = r.json()
